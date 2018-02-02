@@ -709,17 +709,27 @@ function addMarker(price,map)
     var beachMarker = new google.maps.Marker({
         position: {lat: parseFloat(price.latitude), lng: parseFloat(price.longitude)},
         map: map,
-        title: [
-            price.price.toString(),
-        ]
+        title: price.price.toString(),        
       });
 }
+
 function loadPrice(products,map)
 {
-    for (let index = 0; index < products.length; index++) {
-        
+    addMarkerDiego(products[0],map)
+    for (let index = 1; index < products.length; index++) {
+       
         addMarker(products[index],map);
     }            
+}
+
+function addMarkerDiego(price,map)
+{
+    var beachMarker = new google.maps.Marker({
+        position: {lat: parseFloat(price.latitude), lng: parseFloat(price.longitude)},
+        map: map,
+        icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png",
+        title: price.price.toString(),
+      });
 }
 
 
