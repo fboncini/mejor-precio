@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style>
+       #map { 
+        height: 400px;
+        width: 50%; 
+        border-radius: 100%/15%;
+          box-shadow:
+      0 0 0 5px white,
+      0 0 0 10px gray,
+      0 0 0 15px black;
+      
+      
+       }
+    </style>
+  </head>
+<body>
+    
+  <div id="row">
+      
+        
+    <div class=" col-sm-4 col-sm-offset-1" >
+          <h3>mejores precios de <b>@Model.Lista[0].Name</b></h3>
+        <table class="table table-dark" >
+          <thead>
+            <tr>
+              <th scope="col">Precio</th>
+              <th scope="col">Latitud</th>
+              <th scope="col">Longitus</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach (var item in @Model.Lista)
+            {
+              <tr>
+                <td>@item.Price</td>
+                <td>@item.Latitude</td>
+                <td>@item.Longitude</td>
+                <!--More properties-->
+              </tr>
+            }
+            
+          </tbody>
+        </table>
+    </div>
+    
+    <div id="map" class=" col-xs-9 col-xs-offset-1 col-sm-4 col-sm-offset-1"></div>
+        
+      <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+</script>
+  </div>
+  
+          <script src="/js/map.js"></script>
+          <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUz6mUnhrqFpjsLzpMNzSi4NKMNLQ7LT8&callback=initMap"></script>
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Upload";
+}
+
+<div id="bar" class="row">
+
+    <form method="post" enctype="multipart/form-data" action="/Product/Upload">
+        <div class="form-group">
+            <div class="col-md-10">
+                <p>Upload one or more files using this form:</p>
+
+                <input type="file" name="files" multiple class='btn btn-primary' />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Upload" class='btn btn-primary'/>
+            </div>
+        </div>
+    </form>
+</div>
+

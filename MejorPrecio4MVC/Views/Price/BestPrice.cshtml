@@ -1,0 +1,15 @@
+@Model MejorPrecio4MVC.Models.ProductViewModel
+<head>
+</head>
+<body>
+<div>
+<h2>Mejor Precio</h2>
+<h3>Nombre del Producto: @Model.Name</h3>
+<h3>Descripcion: @Model.Description</h3>
+<h3>Precio: @Model.Price</h3>
+<h3>@ViewData["Ubicacion"]</h3>
+</div>
+<h3><a asp-controller="Price" asp-action="maps" asp-route-id=@ViewData["maps"]>Ver Mapa</a></h3>
+<h3><a href='/price/LoadPrice/@Model.BarCode' >Agregar Precio</a></h3>
+<p>Use this area to provide additional information.</p>
+</body>

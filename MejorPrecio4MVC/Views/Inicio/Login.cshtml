@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Login";
+<<<<<<< HEAD
+}
+<!-- @if (!ViewData.ModelState.IsValid) {
+	@Html.ValidationSummary(true,"",new {@class = "text-danger"})
+} -->
+
+	<div class="row">
+		<form id="fomu" class=" col-xs-9 col-xs-offset-1 col-sm-4 col-sm-offset-7" class="container" action="/Inicio/Login" method="post" >
+=======
+
+}
+
+	<div class="row">
+		<form id="fomu" class=" col-xs-9 col-xs-offset-1 col-sm-4 col-sm-offset-7" class="container" action="/Inicio/Login" method="Post" >
+>>>>>>> 4a8b325339b983d49c2931a483b397c1f6c35b05
+  			<div class="form-group">
+    			<label for="exampleInputEmail1">Email address</label>
+    			<input type="email" class="form-control" placeholder="Email" name="Email">
+  			</div>
+  			<div class="form-group">
+				<label>DNI</label>
+				<input type="text" class="form-control" placeholder="DNI" name="DNI">
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" value="Iniciar Sesion">
+			</div>
+ 		</form>
+	</div>

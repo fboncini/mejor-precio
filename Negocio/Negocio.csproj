@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj"/>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj"/>
+  </ItemGroup>
+  <ItemGroup>   &#xD;&#xD;
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ZXing.Net" Version="0.16.2"/>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1-beta3"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+</Project>

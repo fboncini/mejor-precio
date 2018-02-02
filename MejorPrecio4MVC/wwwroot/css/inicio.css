@@ -1,0 +1,30 @@
+#fomu{
+	-webkit-box-shadow: 2px 2px 18px 10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 18px 10px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 18px 10px rgba(0,0,0,0.75);
+	position: relative;
+	top: 45px;
+	padding-top: 15px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+
+}
+#bar{
+	-webkit-box-shadow: 2px 2px 18px 10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 18px 10px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 18px 10px rgba(0,0,0,0.75);
+	position: relative;
+	top: 45px;
+	padding-top: 15px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4a8b325339b983d49c2931a483b397c1f6c35b05

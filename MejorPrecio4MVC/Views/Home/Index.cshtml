@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "User Page";
+}
+
+<div class="row">
+		<form id="fomu" class=" col-xs-9 col-xs-offset-1 col-sm-5 col-sm-offset-3" class="container" >
+			<div class="form-group">
+                <a class="nav-tabs-dropdown btn btn-block btn-primary btn-lg" asp-area="" asp-controller="Product" asp-action="Upload">VISITANTE</a>
+			</div>
+  			<div class="form-group">
+				<button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#modalForm">INICIAR SESION</button>	
+  			</div>
+  			<div class="form-group">
+                  <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#modalForm1">REGISTRO</button>
+   			</div>
+ 		</form>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalForm" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p class="statusMsg"></p>
+                <form role="form" action="/Inicio/Login" method="Post">
+                    <div class="form-group" >
+                        <label for="inputName">DNi</label>
+                        <input type="text" class="form-control" name="DNI" placeholder="Enter your name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" name="Email" placeholder="Enter your email"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary submitBtn">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Modal Footer -->
+        </div>
+    </div>
+</div>
+
+
+<!--                                     SEGUNDO MODAL                                     -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalForm1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p class="statusMsg"></p>
+                <form role="form" action="/Register/SignUp" method="Post">
+                    <div class="form-group" >
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" name="Name" placeholder="Enter your name"/>
+                    </div>
+                    <div class="form-group" >
+                        <label for="inputName">LastName</label>
+                        <input type="text" class="form-control" name="LastName" placeholder="Enter your lastname"/>
+                    </div>
+                    <div class="form-group" >
+                        <label for="inputName">DNI</label>
+                        <input type="text" class="form-control" name="DNI" placeholder="Enter your dni"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" name="Email" placeholder="Enter your email"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary submitBtn">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Modal Footer -->
+        </div>
+    </div>
+</div>

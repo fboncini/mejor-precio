@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Existentes";
+}
+
+<nav class="navbar navbar-inverse">
+    <a class="navbar-brand" href="#">MejorPrecio4MVC</a>
+  <ul class="nav navbar-nav">
+        <li><a asp-controller="Admin" asp-action="Waiting">Pendientes</a></li> 
+        <li><a asp-controller="Admin" asp-action="Existentes">Existentes</a></li> 
+
+    </ul>
+</nav>
+
+
+<div class=" col-sm-6 col-sm-offset-1" >
+          <h3>usuarios Existentes </h3>
+       <table class="table">
+    <thead>
+        <tr>
+                <th>Name</th>
+                <th>LastName</th>
+                <th>DNI</th>
+                <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model.Users) {
+        <tr>
+            <td>@item.Name </td>
+            <td>@item.LastName</td>
+            <td>@item.DNI</td>
+            <td id="mail">@item.Email</td>
+            <td>
+                <a asp-area=""  asp-action="Eliminar" asp-route-id="@item.Email" method ="get">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+    </div>
